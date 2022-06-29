@@ -122,6 +122,9 @@
                                 </segments>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="selectedSegmentTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="sortSegmentPressed:" destination="pma-Zk-ILI" eventType="valueChanged" id="Xdm-rm-swz"/>
+                                </connections>
                             </segmentedControl>
                         </barButtonItem>
                     </toolbarItems>
