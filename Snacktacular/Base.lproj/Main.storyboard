@@ -287,6 +287,11 @@
                                 <action selector="cancelButtonPressed:" destination="aiA-MF-rL7" id="NPv-r7-IOp"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="laG-fp-rsr">
+                            <connections>
+                                <action selector="saveButtonPressed:" destination="aiA-MF-rL7" id="9K6-9M-O6d"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
