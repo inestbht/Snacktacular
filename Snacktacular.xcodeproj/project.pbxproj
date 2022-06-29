@@ -19,6 +19,7 @@
 		8E4BA89A286A45D600A18FF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E4BA898286A45D600A18FF8 /* LaunchScreen.storyboard */; };
 		8E656EFA286BC70A00971083 /* Spot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E656EF9286BC70A00971083 /* Spot.swift */; };
 		8E656EFC286BD37400971083 /* UIViewController+alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E656EFB286BD37400971083 /* UIViewController+alert.swift */; };
+		8E656EFE286BD8E700971083 /* Spots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E656EFD286BD8E700971083 /* Spots.swift */; };
 		8ED5F170286A47ED0080DDA4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8ED5F16F286A47ED0080DDA4 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		8E4BA89B286A45D600A18FF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E656EF9286BC70A00971083 /* Spot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spot.swift; sourceTree = "<group>"; };
 		8E656EFB286BD37400971083 /* UIViewController+alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+alert.swift"; sourceTree = "<group>"; };
+		8E656EFD286BD8E700971083 /* Spots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spots.swift; sourceTree = "<group>"; };
 		8ED5F16F286A47ED0080DDA4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -78,6 +80,7 @@
 				8E4BA88D286A45D400A18FF8 /* AppDelegate.swift */,
 				8E4BA88F286A45D400A18FF8 /* SceneDelegate.swift */,
 				8E656EF9286BC70A00971083 /* Spot.swift */,
+				8E656EFD286BD8E700971083 /* Spots.swift */,
 				8E4BA891286A45D400A18FF8 /* LoginViewController.swift */,
 				8E2A66D0286A744F00A2C275 /* SpotListViewController.swift */,
 				8E2A66D2286A8FA100A2C275 /* SpotTableViewCell.swift */,
@@ -247,6 +250,7 @@
 				8E4BA892286A45D400A18FF8 /* LoginViewController.swift in Sources */,
 				8E4BA88E286A45D400A18FF8 /* AppDelegate.swift in Sources */,
 				8E2A66D5286A969900A2C275 /* SpotDetailViewController.swift in Sources */,
+				8E656EFE286BD8E700971083 /* Spots.swift in Sources */,
 				8E2A66D3286A8FA100A2C275 /* SpotTableViewCell.swift in Sources */,
 				8E656EFA286BC70A00971083 /* Spot.swift in Sources */,
 				8E4BA890286A45D400A18FF8 /* SceneDelegate.swift in Sources */,
