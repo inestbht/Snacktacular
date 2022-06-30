@@ -286,7 +286,7 @@
                                     </constraints>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ReviewCell" id="Hkc-9P-YGj">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ReviewCell" id="Hkc-9P-YGj" customClass="SpotReviewTableViewCell" customModule="Snacktacular" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="424.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Hkc-9P-YGj" id="8jf-8K-WqO">
@@ -373,6 +373,8 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="reviewTextLabel" destination="zw5-e7-zpH" id="qDL-T7-Dkq"/>
+                                            <outlet property="reviewTitleLabel" destination="7Gz-Vr-9Ub" id="oWn-jV-fY9"/>
                                             <segue destination="yaV-y2-BGY" kind="show" identifier="ShowReview" id="9J8-Bh-ARI"/>
                                         </connections>
                                     </tableViewCell>
@@ -858,7 +860,7 @@
             <color red="0.93333333333333335" green="0.4823529411764706" blue="0.27843137254901962" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="UI Element Background">
-            <color red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.92100000381469727" green="0.92100000381469727" blue="0.92100000381469727" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
