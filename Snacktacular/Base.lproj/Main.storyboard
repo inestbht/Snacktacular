@@ -375,6 +375,11 @@
                                         <connections>
                                             <outlet property="reviewTextLabel" destination="zw5-e7-zpH" id="qDL-T7-Dkq"/>
                                             <outlet property="reviewTitleLabel" destination="7Gz-Vr-9Ub" id="oWn-jV-fY9"/>
+                                            <outletCollection property="starImageCollection" destination="xSO-qC-YLn" collectionClass="NSMutableArray" id="p9J-f7-8oY"/>
+                                            <outletCollection property="starImageCollection" destination="Rbt-iS-aJH" collectionClass="NSMutableArray" id="0Ly-Yk-A5j"/>
+                                            <outletCollection property="starImageCollection" destination="8dw-Q3-1Dh" collectionClass="NSMutableArray" id="77D-UI-9VP"/>
+                                            <outletCollection property="starImageCollection" destination="fGg-V4-z73" collectionClass="NSMutableArray" id="wDD-hI-bMc"/>
+                                            <outletCollection property="starImageCollection" destination="zwe-JF-Ba4" collectionClass="NSMutableArray" id="LtZ-Is-Ca7"/>
                                             <segue destination="yaV-y2-BGY" kind="show" identifier="ShowReview" id="9J8-Bh-ARI"/>
                                         </connections>
                                     </tableViewCell>
@@ -519,6 +524,9 @@
                                                             <buttonConfiguration key="configuration" style="plain" image="star" catalog="system">
                                                                 <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="32"/>
                                                             </buttonConfiguration>
+                                                            <connections>
+                                                                <action selector="starButtonPressed:" destination="yaV-y2-BGY" eventType="touchUpInside" id="5Of-wA-vSb"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" tag="1" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1c-An-uFI">
                                                             <rect key="frame" x="42" y="0.0" width="40" height="40"/>
@@ -532,6 +540,9 @@
                                                             <buttonConfiguration key="configuration" style="plain" image="star" catalog="system">
                                                                 <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="32"/>
                                                             </buttonConfiguration>
+                                                            <connections>
+                                                                <action selector="starButtonPressed:" destination="yaV-y2-BGY" eventType="touchUpInside" id="qAe-Iy-tXO"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" tag="2" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="puO-Pu-03T">
                                                             <rect key="frame" x="84" y="0.0" width="40" height="40"/>
@@ -545,6 +556,9 @@
                                                             <buttonConfiguration key="configuration" style="plain" image="star" catalog="system">
                                                                 <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="32"/>
                                                             </buttonConfiguration>
+                                                            <connections>
+                                                                <action selector="starButtonPressed:" destination="yaV-y2-BGY" eventType="touchUpInside" id="lcq-9E-yf9"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" tag="3" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cba-UZ-kqQ">
                                                             <rect key="frame" x="126" y="0.0" width="40" height="40"/>
@@ -558,6 +572,9 @@
                                                             <buttonConfiguration key="configuration" style="plain" image="star" catalog="system">
                                                                 <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="32"/>
                                                             </buttonConfiguration>
+                                                            <connections>
+                                                                <action selector="starButtonPressed:" destination="yaV-y2-BGY" eventType="touchUpInside" id="L3N-E7-Vbz"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" tag="4" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7N9-D3-oCv">
                                                             <rect key="frame" x="168" y="0.0" width="40" height="40"/>
@@ -571,6 +588,9 @@
                                                             <buttonConfiguration key="configuration" style="plain" image="star" catalog="system">
                                                                 <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="32"/>
                                                             </buttonConfiguration>
+                                                            <connections>
+                                                                <action selector="starButtonPressed:" destination="yaV-y2-BGY" eventType="touchUpInside" id="l9u-he-2Xp"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                     <constraints>
@@ -752,6 +772,11 @@
                         <outlet property="reviewTextView" destination="HFX-YD-CZi" id="dFz-zt-NYv"/>
                         <outlet property="reviewTitleField" destination="i6T-UO-H8j" id="x6g-jk-75p"/>
                         <outlet property="saveBarButton" destination="k7T-ha-4Xp" id="Dvp-RQ-luY"/>
+                        <outletCollection property="starButtonCollection" destination="gzi-US-QtA" collectionClass="NSMutableArray" id="4XZ-77-7LT"/>
+                        <outletCollection property="starButtonCollection" destination="G1c-An-uFI" collectionClass="NSMutableArray" id="orO-1v-AOI"/>
+                        <outletCollection property="starButtonCollection" destination="puO-Pu-03T" collectionClass="NSMutableArray" id="n6x-sg-S1w"/>
+                        <outletCollection property="starButtonCollection" destination="cba-UZ-kqQ" collectionClass="NSMutableArray" id="aU1-r9-DlV"/>
+                        <outletCollection property="starButtonCollection" destination="7N9-D3-oCv" collectionClass="NSMutableArray" id="Vv3-cP-xTK"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qBv-Ts-NHZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
