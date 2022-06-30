@@ -168,14 +168,19 @@
                                     <subviews>
                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Restaurant Name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bDc-NU-D6j">
                                             <rect key="frame" x="8" y="8" width="398" height="33"/>
+                                            <color key="backgroundColor" name="UI Element Background"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="33" id="JGw-fP-Hue"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="24"/>
                                             <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <action selector="nameFieldChanged:" destination="aiA-MF-rL7" eventType="editingChanged" id="NMh-7R-4Nk"/>
+                                            </connections>
                                         </textField>
                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="address" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NbB-20-7fO">
                                             <rect key="frame" x="8" y="43" width="398" height="17"/>
+                                            <color key="backgroundColor" name="UI Element Background"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="17" id="dqQ-Ls-Ut2"/>
                                             </constraints>
@@ -403,13 +408,13 @@
                             </connections>
                         </barButtonItem>
                     </toolbarItems>
-                    <navigationItem key="navigationItem" id="tsi-Dz-daX">
+                    <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" id="tsi-Dz-daX">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="3Ie-Oi-XeL">
                             <connections>
                                 <action selector="cancelButtonPressed:" destination="aiA-MF-rL7" id="NPv-r7-IOp"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="laG-fp-rsr">
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="laG-fp-rsr">
                             <connections>
                                 <action selector="saveButtonPressed:" destination="aiA-MF-rL7" id="9K6-9M-O6d"/>
                             </connections>
@@ -418,9 +423,11 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="addressTextField" destination="NbB-20-7fO" id="ywU-UP-ah2"/>
+                        <outlet property="cancelBarButton" destination="3Ie-Oi-XeL" id="ntM-1g-TXE"/>
                         <outlet property="mapView" destination="vuY-ig-LH8" id="4fj-7q-sSi"/>
                         <outlet property="nameTextField" destination="bDc-NU-D6j" id="EFl-YF-okM"/>
                         <outlet property="ratingLabel" destination="8dD-fL-nhS" id="yfD-I4-9Xs"/>
+                        <outlet property="saveBarButton" destination="laG-fp-rsr" id="xue-zd-LvQ"/>
                         <outlet property="tableView" destination="p6a-Pf-WYo" id="noP-hV-9rb"/>
                         <segue destination="ia4-f9-yzn" kind="presentation" identifier="AddReview" modalPresentationStyle="fullScreen" id="ER7-48-KM8"/>
                     </connections>
@@ -675,8 +682,15 @@
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="posted: Dec. 32, 2100" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gHM-yO-9sl">
-                                                    <rect key="frame" x="227" y="23" width="175" height="21"/>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Your amazing review of awesomeness will go here! Hope it helps all of your app users to find the most scrumpteous eats!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HFX-YD-CZi">
+                                                    <rect key="frame" x="8" y="47" width="398" height="223"/>
+                                                    <color key="backgroundColor" name="UI Element Background"/>
+                                                    <color key="textColor" systemColor="labelColor"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="posted: Dec. 32, 2100" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gHM-yO-9sl">
+                                                    <rect key="frame" x="231" y="12" width="175" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="175" id="W66-hr-BRT"/>
                                                         <constraint firstAttribute="height" constant="21" id="gIV-qV-EaB"/>
@@ -685,13 +699,6 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Your amazing review of awesomeness will go here! Hope it helps all of your app users to find the most scrumpteous eats!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HFX-YD-CZi">
-                                                    <rect key="frame" x="8" y="47" width="398" height="223"/>
-                                                    <color key="backgroundColor" name="UI Element Background"/>
-                                                    <color key="textColor" systemColor="labelColor"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                </textView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="HFX-YD-CZi" secondAttribute="trailing" constant="8" id="Fd1-la-6Pf"/>
