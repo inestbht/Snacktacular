@@ -200,14 +200,30 @@
                                                 <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                             </collectionViewFlowLayout>
                                             <cells>
-                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell" id="kuk-nQ-QWe">
+                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell" id="kuk-nQ-QWe" customClass="SpotPhotoCollectionViewCell" customModule="Snacktacular" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="wJW-LB-27b">
                                                         <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                                         <autoresizingMask key="autoresizingMask"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tcx-ja-fwp">
+                                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="100" id="W1v-wc-lqU"/>
+                                                                    <constraint firstAttribute="height" constant="100" id="Zpe-lx-BBY"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="tcx-ja-fwp" firstAttribute="top" secondItem="wJW-LB-27b" secondAttribute="top" id="CC4-Hr-kHZ"/>
+                                                            <constraint firstAttribute="trailing" secondItem="tcx-ja-fwp" secondAttribute="trailing" id="EOR-td-nV1"/>
+                                                            <constraint firstItem="tcx-ja-fwp" firstAttribute="leading" secondItem="wJW-LB-27b" secondAttribute="leading" id="RPr-2k-vYH"/>
+                                                            <constraint firstAttribute="bottom" secondItem="tcx-ja-fwp" secondAttribute="bottom" id="Vws-n9-TEM"/>
+                                                        </constraints>
                                                     </collectionViewCellContentView>
                                                     <connections>
+                                                        <outlet property="photoImageView" destination="tcx-ja-fwp" id="C5C-zh-wa0"/>
                                                         <segue destination="Xmc-Ut-8mz" kind="show" identifier="ShowPhoto" id="OUn-ns-34M"/>
                                                     </connections>
                                                 </collectionViewCell>
@@ -430,6 +446,7 @@
                     <connections>
                         <outlet property="addressTextField" destination="NbB-20-7fO" id="ywU-UP-ah2"/>
                         <outlet property="cancelBarButton" destination="3Ie-Oi-XeL" id="ntM-1g-TXE"/>
+                        <outlet property="collectionView" destination="pr9-78-5i2" id="l3Z-zy-oMT"/>
                         <outlet property="mapView" destination="vuY-ig-LH8" id="4fj-7q-sSi"/>
                         <outlet property="nameTextField" destination="bDc-NU-D6j" id="EFl-YF-okM"/>
                         <outlet property="ratingLabel" destination="8dD-fL-nhS" id="yfD-I4-9Xs"/>
