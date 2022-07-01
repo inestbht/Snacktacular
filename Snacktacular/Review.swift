@@ -55,7 +55,6 @@ class Review {
     
     func saveData(spot: Spot, completion: @escaping (Bool) -> ()) {
         let db = Firestore.firestore()
-
         // Create the dictionary representing data we want to save
         let dataToSave: [String: Any] = self.dictionary
         // if we HAVE saved a record, we'll have an ID, otherwise .addDocument will create one.
