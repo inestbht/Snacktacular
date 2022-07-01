@@ -802,8 +802,55 @@
                     <view key="view" contentMode="scaleToFill" id="Bs2-dZ-EUj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8iN-qf-Fbz">
+                                <rect key="frame" x="8" y="96" width="398" height="15"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="by: Benedict Cumberbatch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lhv-gp-jz7">
+                                        <rect key="frame" x="0.0" y="0.0" width="298" height="15"/>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="on: Dec. 32, 2100" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XEx-Nm-nki">
+                                        <rect key="frame" x="298" y="0.0" width="100" height="15"/>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="w1z-g2-Ciz"/>
+                                </constraints>
+                            </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="This describes my magnificent meal. Scroll if you'd like to see more..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EdN-Ww-q0Q">
+                                <rect key="frame" x="8" y="111" width="398" height="36"/>
+                                <color key="backgroundColor" name="UI Element Background"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="x2u-3K-d9u"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yda-Ss-jAj">
+                                <rect key="frame" x="0.0" y="155" width="414" height="650"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="nIn-bo-CDb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8iN-qf-Fbz" firstAttribute="top" secondItem="nIn-bo-CDb" secondAttribute="top" constant="8" id="1sH-ik-OTK"/>
+                            <constraint firstItem="yda-Ss-jAj" firstAttribute="leading" secondItem="nIn-bo-CDb" secondAttribute="leading" id="Dpx-Op-Kbm"/>
+                            <constraint firstItem="yda-Ss-jAj" firstAttribute="top" secondItem="EdN-Ww-q0Q" secondAttribute="bottom" constant="8" id="Hhe-AT-SjB"/>
+                            <constraint firstItem="nIn-bo-CDb" firstAttribute="trailing" secondItem="yda-Ss-jAj" secondAttribute="trailing" id="Rfq-Me-xH9"/>
+                            <constraint firstItem="nIn-bo-CDb" firstAttribute="trailing" secondItem="EdN-Ww-q0Q" secondAttribute="trailing" constant="8" id="YTP-Bm-ZjC"/>
+                            <constraint firstItem="8iN-qf-Fbz" firstAttribute="leading" secondItem="nIn-bo-CDb" secondAttribute="leading" constant="8" id="dBp-uM-wwr"/>
+                            <constraint firstItem="nIn-bo-CDb" firstAttribute="bottom" secondItem="yda-Ss-jAj" secondAttribute="bottom" constant="8" id="eHQ-ea-f9b"/>
+                            <constraint firstItem="EdN-Ww-q0Q" firstAttribute="leading" secondItem="nIn-bo-CDb" secondAttribute="leading" constant="8" id="rA8-qI-bJx"/>
+                            <constraint firstItem="nIn-bo-CDb" firstAttribute="trailing" secondItem="8iN-qf-Fbz" secondAttribute="trailing" constant="8" id="t3k-za-Qvh"/>
+                            <constraint firstItem="EdN-Ww-q0Q" firstAttribute="top" secondItem="8iN-qf-Fbz" secondAttribute="bottom" id="v02-vi-I4i"/>
+                        </constraints>
                     </view>
                     <toolbarItems>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="BlK-cl-rl7"/>
@@ -828,13 +875,17 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                     <connections>
                         <outlet property="cancelBarButton" destination="vLE-SF-qdg" id="jz6-hg-1km"/>
+                        <outlet property="dateLabel" destination="XEx-Nm-nki" id="pkj-8S-K5d"/>
                         <outlet property="deleteBarButton" destination="Kue-Xn-Ouk" id="DGj-82-kka"/>
+                        <outlet property="descriptionTextView" destination="EdN-Ww-q0Q" id="X3C-zK-Alp"/>
+                        <outlet property="photoImageView" destination="yda-Ss-jAj" id="3Fn-Pf-JCl"/>
+                        <outlet property="postedByLabel" destination="lhv-gp-jz7" id="qKF-ID-V0c"/>
                         <outlet property="saveBarButton" destination="uEn-CI-mHx" id="rQL-S5-cpn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BRd-YP-l4H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5716" y="846"/>
+            <point key="canvasLocation" x="5715.9420289855079" y="845.75892857142856"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="UOV-YA-fB7">
