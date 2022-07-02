@@ -32,6 +32,7 @@
 		8ED5F170286A47ED0080DDA4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8ED5F16F286A47ED0080DDA4 /* GoogleService-Info.plist */; };
 		8EDC3439286E3E3E008ED8F5 /* UIView+addBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC3438286E3E3E008ED8F5 /* UIView+addBorder.swift */; };
 		8EDC343B286E3F19008ED8F5 /* UIBarButtonItem+hide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC343A286E3F19008ED8F5 /* UIBarButtonItem+hide.swift */; };
+		8EDDC6E028709A5F0020F335 /* SnackUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDDC6DF28709A5F0020F335 /* SnackUser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		8ED5F16F286A47ED0080DDA4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		8EDC3438286E3E3E008ED8F5 /* UIView+addBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+addBorder.swift"; sourceTree = "<group>"; };
 		8EDC343A286E3F19008ED8F5 /* UIBarButtonItem+hide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+hide.swift"; sourceTree = "<group>"; };
+		8EDDC6DF28709A5F0020F335 /* SnackUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackUser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				8E50A594286D386F00CC8423 /* Reviews.swift */,
 				8E76B6D7286EA3AB0079EBFA /* Photo.swift */,
 				8EA4D349286FA8C900B5FCF3 /* Photos.swift */,
+				8EDDC6DF28709A5F0020F335 /* SnackUser.swift */,
 				8E4BA891286A45D400A18FF8 /* LoginViewController.swift */,
 				8E2A66D0286A744F00A2C275 /* SpotListViewController.swift */,
 				8E2A66D2286A8FA100A2C275 /* SpotTableViewCell.swift */,
@@ -296,6 +299,7 @@
 				8E656F00286BEADF00971083 /* APIKeys.swift in Sources */,
 				8E656EFA286BC70A00971083 /* Spot.swift in Sources */,
 				8E4BA890286A45D400A18FF8 /* SceneDelegate.swift in Sources */,
+				8EDDC6E028709A5F0020F335 /* SnackUser.swift in Sources */,
 				8EA4D34C286FB4D100B5FCF3 /* SpotPhotoCollectionViewCell.swift in Sources */,
 				8E656EFC286BD37400971083 /* UIViewController+alert.swift in Sources */,
 				8EDC3439286E3E3E008ED8F5 /* UIView+addBorder.swift in Sources */,
